@@ -21,7 +21,7 @@ def fetch_profile():
         res = magtag.network.fetch(f"https://deusprogrammer.com/api/mental/public/profiles/{profile_id}")
         return res.json()
     except:
-        return {"username": "not connected", "hp": 0, "level": 0, "statuses": []}
+        return {"username": "NO WIFI", "hp": 0, "level": 0, "statuses": []}
 
 def update_screen():
     profile = fetch_profile()
